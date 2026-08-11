@@ -6,12 +6,7 @@
   <title>Luna — Lightweight Video Editor</title>
   <meta name="description" content="Luna is a lightweight native video editor. Fast cuts, markers, silence removal, and highlight export — without the bloat." />
   <meta name="theme-color" content="#0B0D12" />
-  <meta property="og:title" content="Luna — Lightweight Video Editor" />
-  <meta property="og:description" content="Edit video without the bloat. Local-first, keyboard-driven, built for speed." />
-  <meta property="og:type" content="website" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -19,12 +14,8 @@
   <div class="bg-grid" aria-hidden="true"></div>
   <div class="glow glow-1" aria-hidden="true"></div>
   <div class="glow glow-2" aria-hidden="true"></div>
-
   <header class="nav">
-    <a class="brand" href="#">
-      <span class="logo" aria-hidden="true"></span>
-      <span>Luna</span>
-    </a>
+    <a class="brand" href="#"><span class="logo" aria-hidden="true"></span><span>Luna</span></a>
     <nav>
       <a href="#features">Features</a>
       <a href="#how">How it works</a>
@@ -32,130 +23,107 @@
       <a class="btn btn-sm btn-primary" href="https://github.com/NathanOyewole/luna" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </header>
-
   <main>
     <section class="hero">
-      <h1>
-        Your videos,<br />
-        <span class="accent">edited simply.</span>
-      </h1>
-      <p class="lede">
-        A lightweight native editor that stays out of your way.
-        Cut, mark, trim silence, export — without CapCut’s weight or a pro suite’s complexity.
-      </p>
+      <h1>Your videos,<br /><span class="accent">edited simply.</span></h1>
+      <p class="lede">A lightweight native editor that stays out of your way. Cut, mark, trim silence, export — without CapCut’s weight or a pro suite’s complexity.</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="https://github.com/NathanOyewole/luna" target="_blank" rel="noopener">
-          Get Luna
-        </a>
+        <a class="btn btn-primary" href="https://github.com/NathanOyewole/luna" target="_blank" rel="noopener">Get Luna</a>
         <a class="btn btn-ghost" href="#how">How it works</a>
       </div>
       <div class="platforms">
-        <span>Linux</span>
-        <span>Windows</span>
-        <span class="muted">macOS soon</span>
+        <span>Linux</span><span>Windows</span><span class="muted">macOS soon</span>
       </div>
     </section>
-
+    <section class="product" aria-label="Luna editor preview">
+      <div class="product-frame">
+        <div class="window-chrome">
+          <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          <span class="window-title">Luna — Untitled Project</span>
+        </div>
+        <div class="editor">
+          <div class="toolbar">
+            <span class="tb-brand">LUNA</span>
+            <span class="tb-btn play">▶</span>
+            <span class="tb-time">12.40s</span>
+            <span class="tb-sep"></span>
+            <span class="tb-btn">Split</span>
+            <span class="tb-btn">Delete</span>
+            <span class="tb-btn accent-btn">Mark</span>
+            <span class="tb-sep"></span>
+            <span class="tb-btn">Import</span>
+            <span class="tb-spacer"></span>
+            <span class="tb-btn export">Export</span>
+          </div>
+          <div class="editor-body">
+            <div class="preview-pane">
+              <div class="preview-screen">
+                <div class="preview-empty">
+                  <span class="preview-logo">LUNA</span>
+                  <span class="preview-hint">Space play · S split · M mark</span>
+                </div>
+                <div class="preview-timecode">00:12:40</div>
+              </div>
+            </div>
+            <aside class="side-panel">
+              <div class="side-tabs"><span class="side-tab active">AI</span><span class="side-tab">Inspector</span></div>
+              <div class="side-card"><span class="side-tag">Silence</span><p>2.1s dead air</p><span class="side-actions"><em>Accept</em> · Reject</span></div>
+              <div class="side-card dim"><span class="side-tag filler">Filler</span><p>“um” at 0:48</p></div>
+              <div class="side-card dim"><span class="side-tag mark-tag">Marker</span><p>Mark 2 · 1:12</p></div>
+            </aside>
+          </div>
+          <div class="timeline">
+            <div class="tl-header"><span>Timeline</span><span class="tl-hint">S split · Del · Drag edges</span></div>
+            <div class="tl-track">
+              <div class="tl-label">Track 1</div>
+              <div class="tl-lane">
+                <div class="clip c1"><span class="clip-name">session_01</span><span class="clip-dur">48.2s</span></div>
+                <div class="clip c2"><span class="clip-name">session_01</span><span class="clip-dur">22.0s</span></div>
+                <div class="marker-flag"></div>
+                <div class="playhead"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="features" id="features">
-      <div class="section-head center">
-        <h2>Everything you need.<br /><span class="soft">Nothing you don’t.</span></h2>
-      </div>
+      <div class="section-head center"><h2>Everything you need.<br /><span class="soft">Nothing you don’t.</span></h2></div>
       <div class="feature-grid">
-        <article class="feature">
-          <div class="key">S</div>
-          <h3>Split</h3>
-          <p>Razor at the playhead. Keyboard-first, always visible.</p>
-        </article>
-        <article class="feature">
-          <div class="key">M</div>
-          <h3>Markers</h3>
-          <p>Flag moments as you watch. Jump back from the inspector.</p>
-        </article>
-        <article class="feature">
-          <div class="icon">✂</div>
-          <h3>Silence cuts</h3>
-          <p>Bulk-remove dead air — including mid-clip — with one action.</p>
-        </article>
-        <article class="feature">
-          <div class="icon">◆</div>
-          <h3>Highlights</h3>
-          <p>Export padded ranges around your markers as a tight reel.</p>
-        </article>
-        <article class="feature">
-          <div class="icon">⚡</div>
-          <h3>Proxy scrub</h3>
-          <p>Long files get a lightweight proxy so seeking stays responsive.</p>
-        </article>
-        <article class="feature">
-          <div class="icon">↩</div>
-          <h3>Undo history</h3>
-          <p>Ripple deletes, trims, and splits — reversible when you need it.</p>
-        </article>
+        <article class="feature"><div class="key">S</div><h3>Split</h3><p>Razor at the playhead. Keyboard-first, always visible.</p></article>
+        <article class="feature"><div class="key">M</div><h3>Markers</h3><p>Flag moments as you watch. Jump back from the inspector.</p></article>
+        <article class="feature"><div class="icon">✂</div><h3>Silence cuts</h3><p>Bulk-remove dead air — including mid-clip — with one action.</p></article>
+        <article class="feature"><div class="icon">◆</div><h3>Highlights</h3><p>Export padded ranges around your markers as a tight reel.</p></article>
+        <article class="feature"><div class="icon">⚡</div><h3>Proxy scrub</h3><p>Long files get a lightweight proxy so seeking stays responsive.</p></article>
+        <article class="feature"><div class="icon">↩</div><h3>Undo history</h3><p>Ripple deletes, trims, and splits — reversible when you need it.</p></article>
       </div>
     </section>
-
     <section class="how" id="how">
-      <div class="section-head center">
-        <h2>Three steps.</h2>
-        <p>Import → shape → export.</p>
-      </div>
+      <div class="section-head center"><h2>Three steps.</h2><p>Import → shape → export.</p></div>
       <ol class="steps">
-        <li>
-          <span class="num">01</span>
-          <div>
-            <h3>Import</h3>
-            <p>Drop a video. Luna probes it and builds proxies in the background.</p>
-          </div>
-        </li>
-        <li>
-          <span class="num">02</span>
-          <div>
-            <h3>Edit</h3>
-            <p>Play, mark, split, trim. Apply silence suggestions when they land.</p>
-          </div>
-        </li>
-        <li>
-          <span class="num">03</span>
-          <div>
-            <h3>Export</h3>
-            <p>Full timeline or highlights around markers. One pass, local FFmpeg.</p>
-          </div>
-        </li>
+        <li><span class="num">01</span><div><h3>Import</h3><p>Drop a video. Luna probes it and builds proxies in the background.</p></div></li>
+        <li><span class="num">02</span><div><h3>Edit</h3><p>Play, mark, split, trim. Apply silence suggestions when they land.</p></div></li>
+        <li><span class="num">03</span><div><h3>Export</h3><p>Full timeline or highlights around markers. One pass, local FFmpeg.</p></div></li>
       </ol>
     </section>
-
     <section class="local" id="local">
       <div class="local-card">
         <h2>Local-first by design</h2>
-        <p>
-          Your project is an edit decision list — kilobytes, not gigabytes.
-          Frames are decoded only when needed. Heavy work (scrub decode, AI, export)
-          runs in isolated processes so the UI stays responsive.
-        </p>
+        <p>Your project is an edit decision list — kilobytes, not gigabytes. Frames are decoded only when needed. Heavy work runs in isolated processes so the UI stays responsive.</p>
         <p class="quote-label">The idea</p>
-        <blockquote>
-          Neovim philosophy for video: cheap always-resident state,
-          expensive work delegated. You edit structure, not a pile of decoded frames.
-        </blockquote>
+        <blockquote>Neovim philosophy for video: cheap always-resident state, expensive work delegated. You edit structure, not a pile of decoded frames.</blockquote>
       </div>
     </section>
-
     <section class="final-cta">
       <h2>Ready when you are.</h2>
       <p>Open source. Built in Rust. Yours to run.</p>
       <div class="cta-row">
-        <a class="btn btn-primary" href="https://github.com/NathanOyewole/luna" target="_blank" rel="noopener">
-          Open on GitHub
-        </a>
+        <a class="btn btn-primary" href="https://github.com/NathanOyewole/luna" target="_blank" rel="noopener">Open on GitHub</a>
       </div>
     </section>
   </main>
-
   <footer class="footer">
-    <div class="brand">
-      <span class="logo" aria-hidden="true"></span>
-      <span>Luna</span>
-    </div>
+    <div class="brand"><span class="logo" aria-hidden="true"></span><span>Luna</span></div>
     <p>Lightweight video editor</p>
     <div class="links">
       <a href="https://github.com/NathanOyewole/luna" target="_blank" rel="noopener">App</a>
