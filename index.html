@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Luna — Lightweight Gameplay Video Editor</title>
-  <meta name="description" content="Luna is a simple, fast video editor for Bloodstrike, COD Mobile, and gameplay clips. No CapCut RAM bloat. No DaVinci complexity. Just cut, mark, export." />
+  <title>Luna — Lightweight Video Editor</title>
+  <meta name="description" content="Luna is a lightweight native video editor. Fast cuts, markers, silence removal, and highlight export — without the bloat." />
   <meta name="theme-color" content="#0B0D12" />
-  <meta property="og:title" content="Luna — Lightweight Gameplay Video Editor" />
-  <meta property="og:description" content="Edit gameplay without the bloat. Split, mark kills, cut silence, export highlights." />
+  <meta property="og:title" content="Luna — Lightweight Video Editor" />
+  <meta property="og:description" content="Edit video without the bloat. Local-first, keyboard-driven, built for speed." />
   <meta property="og:type" content="website" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -23,158 +23,143 @@
   <header class="nav">
     <a class="brand" href="#">
       <span class="logo" aria-hidden="true"></span>
-      <span>LUNA</span>
+      <span>Luna</span>
     </a>
     <nav>
       <a href="#features">Features</a>
-      <a href="#workflow">Workflow</a>
-      <a href="#why">Why Luna</a>
-      <a class="btn btn-sm" href="https://github.com/NathanOyewole/luna" target="_blank" rel="noopener">GitHub</a>
+      <a href="#how">How it works</a>
+      <a href="#local">Local-first</a>
+      <a class="btn btn-sm btn-primary" href="https://github.com/NathanOyewole/luna" target="_blank" rel="noopener">GitHub</a>
     </nav>
   </header>
 
   <main>
     <section class="hero">
-      <p class="eyebrow">Built for gameplay editors</p>
       <h1>
-        Cut sessions.<br />
-        <span class="accent">Ship highlights.</span><br />
-        Skip the bloat.
+        Your videos,<br />
+        <span class="accent">edited simply.</span>
       </h1>
       <p class="lede">
-        Luna is a lightweight native video editor for Bloodstrike, CODM, and long gameplay recordings.
-        Simple enough for a 2-hour session — flexible enough that you stay in flow.
+        A lightweight native editor that stays out of your way.
+        Cut, mark, trim silence, export — without CapCut’s weight or a pro suite’s complexity.
       </p>
       <div class="cta-row">
         <a class="btn btn-primary" href="https://github.com/NathanOyewole/luna" target="_blank" rel="noopener">
-          Get Luna on GitHub
+          Get Luna
         </a>
-        <a class="btn btn-ghost" href="#workflow">See the workflow</a>
+        <a class="btn btn-ghost" href="#how">How it works</a>
       </div>
-      <p class="hint">Open source · Rust + egui · FFmpeg under the hood</p>
-    </section>
-
-    <section class="pain" id="why">
-      <div class="section-head">
-        <h2>You already know the pain</h2>
-        <p>Most “simple” editors aren’t. Most “pro” editors aren’t worth the learning curve for a kill montage.</p>
-      </div>
-      <div class="pain-grid">
-        <article class="card bad">
-          <h3>CapCut on PC</h3>
-          <p>Heavy install. Eats RAM. Fine for TikTok — overkill and sluggish for long ranked sessions.</p>
-        </article>
-        <article class="card bad">
-          <h3>DaVinci Resolve</h3>
-          <p>Incredible tool. Also a film suite. You wanted to trim dead air, not learn color science.</p>
-        </article>
-        <article class="card good">
-          <h3>Luna</h3>
-          <p>One job: edit gameplay fast. Split, mark moments, cut silence, export a highlight reel. Done.</p>
-        </article>
+      <div class="platforms">
+        <span>Linux</span>
+        <span>Windows</span>
+        <span class="muted">macOS soon</span>
       </div>
     </section>
 
     <section class="features" id="features">
-      <div class="section-head">
-        <h2>Features that match how you actually edit</h2>
-        <p>Keyboard-first, timeline-clear, no 47 panels fighting for attention.</p>
+      <div class="section-head center">
+        <h2>Everything you need.<br /><span class="soft">Nothing you don’t.</span></h2>
       </div>
       <div class="feature-grid">
         <article class="feature">
           <div class="key">S</div>
-          <h3>Split at playhead</h3>
-          <p>Razor cuts where the action is. No hunting for a buried tool.</p>
+          <h3>Split</h3>
+          <p>Razor at the playhead. Keyboard-first, always visible.</p>
         </article>
         <article class="feature">
           <div class="key">M</div>
-          <h3>Mark the moment</h3>
-          <p>Flag kills, clutches, and funny deaths. Jump back from the inspector list.</p>
-        </article>
-        <article class="feature">
-          <div class="key">Del</div>
-          <h3>Ripple delete</h3>
-          <p>Remove a clip and the timeline closes the gap. Stay tight.</p>
+          <h3>Markers</h3>
+          <p>Flag moments as you watch. Jump back from the inspector.</p>
         </article>
         <article class="feature">
           <div class="icon">✂</div>
-          <h3>Cut all silences</h3>
-          <p>Bulk-trim dead air from AI suggestions — including mid-clip silence.</p>
+          <h3>Silence cuts</h3>
+          <p>Bulk-remove dead air — including mid-clip — with one action.</p>
         </article>
         <article class="feature">
           <div class="icon">◆</div>
-          <h3>Highlight export</h3>
-          <p>Export ±3s around every marker as a merged highlight reel.</p>
+          <h3>Highlights</h3>
+          <p>Export padded ranges around your markers as a tight reel.</p>
         </article>
         <article class="feature">
           <div class="icon">⚡</div>
-          <h3>Proxy scrubbing</h3>
-          <p>Long 1080p sessions get a lightweight proxy so scrubbing stays usable.</p>
+          <h3>Proxy scrub</h3>
+          <p>Long files get a lightweight proxy so seeking stays responsive.</p>
+        </article>
+        <article class="feature">
+          <div class="icon">↩</div>
+          <h3>Undo history</h3>
+          <p>Ripple deletes, trims, and splits — reversible when you need it.</p>
         </article>
       </div>
     </section>
 
-    <section class="workflow" id="workflow">
-      <div class="section-head">
-        <h2>From raw session to reel</h2>
-        <p>A workflow built for ranked VODs — not wedding films.</p>
+    <section class="how" id="how">
+      <div class="section-head center">
+        <h2>Three steps.</h2>
+        <p>Import → shape → export.</p>
       </div>
       <ol class="steps">
         <li>
           <span class="num">01</span>
           <div>
             <h3>Import</h3>
-            <p>Drop your Bloodstrike / CODM recording. Luna probes duration and starts proxy + audio in the background.</p>
+            <p>Drop a video. Luna probes it and builds proxies in the background.</p>
           </div>
         </li>
         <li>
           <span class="num">02</span>
           <div>
-            <h3>Mark &amp; cut</h3>
-            <p>Play, hit <kbd>M</kbd> on good moments, <kbd>S</kbd> to split, drag edges to trim. Apply silence cuts when AI surfaces them.</p>
+            <h3>Edit</h3>
+            <p>Play, mark, split, trim. Apply silence suggestions when they land.</p>
           </div>
         </li>
         <li>
           <span class="num">03</span>
           <div>
             <h3>Export</h3>
-            <p>Full timeline export — or <strong>Highlights</strong> for a tight reel around your markers only.</p>
+            <p>Full timeline or highlights around markers. One pass, local FFmpeg.</p>
           </div>
         </li>
       </ol>
     </section>
 
-    <section class="philosophy">
-      <blockquote>
-        <p>“Neovim philosophy” for video — the project stays cheap in memory. Heavy work (decode, AI, export) is isolated. You edit an EDL, not a pile of decoded frames.</p>
-        <footer>— Luna architecture</footer>
-      </blockquote>
+    <section class="local" id="local">
+      <div class="local-card">
+        <h2>Local-first by design</h2>
+        <p>
+          Your project is an edit decision list — kilobytes, not gigabytes.
+          Frames are decoded only when needed. Heavy work (scrub decode, AI, export)
+          runs in isolated processes so the UI stays responsive.
+        </p>
+        <p class="quote-label">The idea</p>
+        <blockquote>
+          Neovim philosophy for video: cheap always-resident state,
+          expensive work delegated. You edit structure, not a pile of decoded frames.
+        </blockquote>
+      </div>
     </section>
 
     <section class="final-cta">
-      <h2>Ready to edit without the friction?</h2>
-      <p>Clone the repo, build once, and keep the terminal out of your daily flow.</p>
+      <h2>Ready when you are.</h2>
+      <p>Open source. Built in Rust. Yours to run.</p>
       <div class="cta-row">
         <a class="btn btn-primary" href="https://github.com/NathanOyewole/luna" target="_blank" rel="noopener">
-          Open the Luna repo
-        </a>
-        <a class="btn btn-ghost" href="https://github.com/NathanOyewole/luna#readme" target="_blank" rel="noopener">
-          Read the README
+          Open on GitHub
         </a>
       </div>
-      <p class="hint">Linux works today · Windows via local build or GitHub Actions artifact</p>
     </section>
   </main>
 
   <footer class="footer">
     <div class="brand">
       <span class="logo" aria-hidden="true"></span>
-      <span>LUNA</span>
+      <span>Luna</span>
     </div>
-    <p>Lightweight gameplay editor · Made for people who actually play.</p>
+    <p>Lightweight video editor</p>
     <div class="links">
-      <a href="https://github.com/NathanOyewole/luna" target="_blank" rel="noopener">App repo</a>
-      <a href="https://github.com/NathanOyewole/luna-web" target="_blank" rel="noopener">This site</a>
+      <a href="https://github.com/NathanOyewole/luna" target="_blank" rel="noopener">App</a>
+      <a href="https://github.com/NathanOyewole/luna-web" target="_blank" rel="noopener">Site</a>
       <a href="https://github.com/NathanOyewole" target="_blank" rel="noopener">@NathanOyewole</a>
     </div>
   </footer>
